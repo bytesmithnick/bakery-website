@@ -1,9 +1,10 @@
 import './App.css'
+import Navbar from './components/Navbar.jsx'
 
 function App() {
    return (
     <>
-      <h2>Nitya maa foods</h2>
+      <Navbar/>
     </>
   )
 }
