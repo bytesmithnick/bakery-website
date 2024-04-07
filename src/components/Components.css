@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tiro+Devanagari+Hindi&display=swap');
+
+:root {
+    --font-tiro: "Tiro Devanagari Hindi", serif;
+    --font-josefin: "Josefin Sans", sans-serif;
+    --font-mukta: "Mukta", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+}
+
 .navbar_container {
     height: 10vh;
+    width: 100vw;
 }
 
 .navbar_btn {
@@ -20,3 +30,23 @@
 .navbar_btn:hover {
     box-shadow: 0 0 10px rgb(0, 4, 255), inset 0 0 10px rgb(25, 0, 255);
 }
+
+li {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--font-nunito);
+}
+
+.navbar_ul {
+    margin-right: 4rem;
+}
+
+.navbar_span_nitya {
+    font-family: var(--font-josefin);
+}
+
+.navbar_span_maa{
+    font-family: var(--font-tiro);
+}
+
