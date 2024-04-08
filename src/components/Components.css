@@ -7,6 +7,8 @@
     --font-nunito: "Nunito", sans-serif;
 }
 
+/* NAVBAR SECTION  */
+
 .navbar_container {
     height: 10vh;
     width: 100vw;
@@ -46,7 +48,18 @@ li {
     font-family: var(--font-josefin);
 }
 
-.navbar_span_maa{
+.navbar_span_maa {
     font-family: var(--font-tiro);
+}
+
+/* MAIN PAGE SECTION  */
+
+.main_container {
+    height: 90vh;
+    width: 100vw;
+    background: url(../Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 5rem;
 }
 
