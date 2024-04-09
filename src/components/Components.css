@@ -57,9 +57,24 @@ li {
 .main_container {
     height: 90vh;
     width: 100vw;
-    background: url(../Images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 10rem 5rem;
 }
 
+.background_image::before {
+    content: '';
+    top:0;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background: url(../Images/bakes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.span_add {
+    color: #c7b199;
+
+}
