@@ -1,10 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Lobster&display=swap');
 
 :root {
     --font-tiro: "Tiro Devanagari Hindi", serif;
     --font-josefin: "Josefin Sans", sans-serif;
     --font-mukta: "Mukta", sans-serif;
     --font-nunito: "Nunito", sans-serif;
+    --font-lobster: "Lobster", sans-serif;
+    --font-dancing: "Dancing Script", cursive;
+    --font-bebas: "Bebas Neue", sans-serif;
+}
+
+/* UTILITY CLASSES */
+
+.font_josefin {
+    font-family: var(--font-josefin);
+}
+
+.font_dancing {
+    font-family: var(--font-dancing);
+}
+
+.navbar_span_maa {
+    font-family: var(--font-tiro);
+}
+
+.font_mukta {
+    font-family: var(--font-mukta);
+}
+
+.font_lobster {
+    font-family: var(--font-lobster);
+}
+
+.font_bebas {
+    font-family: var(--font-bebas);
+}
+
+.font_nunito {
+    font-family: var(--font-nunito);
 }
 
 /* NAVBAR SECTION  */
@@ -34,22 +68,21 @@
 }
 
 li {
-    padding: 0 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
+    padding: 0.3rem 0.3rem;
+    margin: 0rem 0.9rem;
+    font-size: 1rem;
     font-family: var(--font-nunito);
+    transition: transform 0.1s ease;
 }
 
-.navbar_ul {
-    margin-right: 4rem;
+li:hover {
+    color: #dfa05e;
+    border-bottom: 1px solid #dfa05e;
+    transform: scale(1.1);
 }
 
-.navbar_span_nitya {
-    font-family: var(--font-josefin);
-}
-
-.navbar_span_maa {
-    font-family: var(--font-tiro);
+.nav_home_link:hover {
+    color: #dfa05e;
 }
 
 /* MAIN PAGE SECTION  */
@@ -75,6 +108,6 @@ li {
 }
 
 .span_add {
-    color: #c7b199;
-
+    color: #dfa05e;
 }
+
