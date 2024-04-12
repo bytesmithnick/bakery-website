@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div className='navbar_container background_image text-white grid sm:grid-cols-12 gap-3 items-center'>
+        <div className='navbar_container bg_image text-white grid sm:grid-cols-12 gap-3 items-center'>
             <div className="navbar_left grid justify-center sm:col-span-2 items-center min-h-[9vh]">
                 <Link to='/' className='nav_home_link'>
                     <span className='font_dancing justify-end text-2xl'>Nitya</span>
@@ -19,9 +19,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar_right sm:col-span-2 min-h-[9vh] flex items-center justify-center">
-                <Link to='/'><i class="fa-solid fa-magnifying-glass p-4 span_add"></i></Link>
-                <Link to='/'><i class="fa-regular fa-user p-4 span_add"></i></Link>
-                <Link to='/'><i class="fa-solid fa-bag-shopping p-4 span_add"></i></Link>
+                <Link to='/'><i className="fa-solid fa-magnifying-glass p-4 span_add"></i></Link>
+                <Link to='/'><i className="fa-regular fa-user p-4 span_add"></i></Link>
+                <Link to='/'><i className="fa-solid fa-bag-shopping p-4 span_add"></i></Link>
             </div>
         </div>
     )

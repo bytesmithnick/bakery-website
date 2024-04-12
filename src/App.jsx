@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="container">
           <Navbar />
           <Routes>
             <Route exact path='/' element={<Mainpage />}></Route>
@@ -18,7 +17,6 @@ function App() {
             <Route exact path='/contact' element={<Contact />}></Route>
             <Route exact path='/booktable' element={<Booktable />}></Route>
           </Routes>
-        </div>
       </BrowserRouter>
     </>
   )

@@ -45,7 +45,22 @@
 
 .navbar_container {
     height: 10vh;
-    width: 100vw;
+    width: 100%;
+    position: relative;
+}
+
+.bg_image::before {
+    content: '';
+    position: fixed;
+    background: url(../Images/bakes.jpg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .navbar_btn {
@@ -89,32 +104,18 @@ li:hover {
 
 .main_container {
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     padding: 10rem 5rem;
-}
-
-.background_image::before {
-    content: '';
-    top:0;
-    position: fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    background: url(../Images/bakes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(0.5);
-    z-index: -1;
+    position: relative;
 }
 
 .span_add {
     color: #dfa05e;
 }
 
-/* MENU SECTION  */
+/* MENU CARD SECTION  */
 
 .menu_card_container {
-    /* border: 2px solid white; */
     height: 55vh;
     width: 23vw;
     text-align: center;
@@ -122,12 +123,11 @@ li:hover {
     padding: 2rem 2rem;
 }
 
-.menu_card_container img {
+.menu_card_img {
     position: absolute;
     z-index: -1;
     height: 55vh;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -136,15 +136,42 @@ li:hover {
 
 .menu_card {
     border: 1px solid white;
-    padding: 2rem 2rem;
     height: 100%;
+    width: 100%;
+    padding: 1.5rem;
 }
 
-.menu_card_container h3 {
-    border: 1px solid yellow;
+.menu_card:hover {
+    border: 1px solid #dfa05e;
 }
 
-.menu_card_container button {
-    border: 1px solid red;
+/* MENU SECTION  */
+
+.menu_container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.menu_heading {
+    font-family: var(--font-dancing);
+}
+
+.menu_tittle {
+    font-family: var(--font-josefin);
+    color: #dfa05e;
+}
+
+.menu_about {
+    font-family: var(--font-dancing);
+}
+
+.menu_about {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.menu_card:hover .menu_about {
+    display: block;
 }
 
