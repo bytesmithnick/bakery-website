@@ -5,6 +5,7 @@ import Menu from './components/Menu.jsx'
 import Contact from './components/Contact.jsx'
 import Booktable from './components/Booktable.jsx'
 import Mainpage from './components/Mainpage.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />}></Route>
             <Route exact path='/booktable' element={<Booktable />}></Route>
           </Routes>
+          <Footer/>
       </BrowserRouter>
     </>
   )
