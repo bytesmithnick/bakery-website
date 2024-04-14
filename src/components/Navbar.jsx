@@ -15,7 +15,7 @@ const Navbar = () => {
                 <ul className='navbar_ul flex'>
                     <Link to="/menu"><li>Menu</li></Link>
                     <Link to="/contact"><li >Contact</li></Link>
-                    <Link to="/booktable"><li >Blog</li></Link>
+                    <Link to="/blog"><li >Blog</li></Link>
                 </ul>
             </div>
             <div className="navbar_right sm:col-span-2 min-h-[9vh] flex items-center justify-center">
