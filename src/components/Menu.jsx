@@ -11,8 +11,8 @@ import Donut from '../Images/donut.jpg'
 
 const Menu = () => {
   return (
-    <div className="menu_container bg_image grid items-center justify-center">
-      <div className="menu_heading text-white">
+    <div className="menu_container bg_image grid justify-center">
+      <div className="menu_heading text-white h-[2vh]">
         <h2 className='text-6xl my-7'>Our Top Selling</h2>
       </div>
       <div className="menu_items grid sm:grid-cols-2 gap-10 lg:grid-cols-3">

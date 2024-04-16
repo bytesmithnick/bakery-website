@@ -149,7 +149,7 @@ li:hover {
 
 .menu_container {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     position: relative;
 }
 
@@ -221,6 +221,23 @@ textarea {
 
 .blog_container {
     height: 90vh;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.blog_left{
+    font-family: var(--font-josefin);
+}
+
+.blog_left span {
+    display: block;
+}
+
+.blog_left :nth-child(3) {
+    color: #dfa05e;
+}
+
+.blog_right {
+    font-family: var(--font-josefin);
 }
 
 /* FOOTER SECTION  */
